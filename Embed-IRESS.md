@@ -13,8 +13,8 @@ This should have already been setup at this stage, but if it hasn't - please get
 Add the following two lines inside of your <head> tag on the page you would like Quotehaven's form to be rendered on. **Make sure to replace "ENTER-YOUR-CODE-HERE" with the ID that Quotehaven provides when you whitelist your site.**
 
 ```html
-<link rel="stylesheet" href="https://quotehaven.valet/e/css?id=ENTER-YOUR-CODE-HERE">
-<script src="https://quotehaven.valet/e/js?id=ENTER-YOUR-CODE-HERE"></script>
+<link rel="stylesheet" href="https://iress.quotehaven.co.uk/e/css?id=ENTER-YOUR-CODE-HERE">
+<script src="https://iress.quotehaven.co.uk/e/js?id=ENTER-YOUR-CODE-HERE"></script>
 ```
 
 ### 3. Add Quotehaven's additional base styles and scripts just before the </body> tag of your website
