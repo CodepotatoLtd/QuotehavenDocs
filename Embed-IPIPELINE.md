@@ -10,41 +10,24 @@ This should have already been setup at this stage, but if it hasn't - please get
 
 ### 2. Add your Quotehaven site's styles and scripts to the <head> tag of your website
 
-Add the following two lines inside of your <head> tag on the page you would like Quotehaven's form to be rendered on. **Make sure to replace "ENTER-YOUR-CODE-HERE" with the ID that Quotehaven provides when you whitelist your site.**
+Add the following two lines before the closing `</head>` tag on the page you would like Quotehaven's form to be rendered on. **Make sure to replace "ENTER-YOUR-CODE-HERE" with the ID that Quotehaven provides when you whitelist your site.**
 
 ```html
-<link rel="stylesheet" href="https://iress.quotehaven.co.uk/e/css?id=ENTER-YOUR-CODE-HERE">
-<script src="https://iress.quotehaven.co.uk/e/js?id=ENTER-YOUR-CODE-HERE"></script>
+<link rel="stylesheet" href="https://ipipeline.quotehaven.co.uk/css/embed.css">
+<link rel="stylesheet" href="https://ipipeline.quotehaven.co.uk/e/css?id=ENTER-YOUR-CODE-HERE">
+<script src="https://ipipeline.quotehaven.co.uk/e/js?id=ENTER-YOUR-CODE-HERE"></script>
 ```
 
 ### 3. Add Quotehaven's additional base styles and scripts just before the </body> tag of your website
 
-Add the following script just before the closing </body> tag on your website
+Add the following script just before the closing `</body>` tag on your website
 
 ```html
-<script>
-(function () {
-    document.addEventListener("DOMContentLoaded", function() {
-        const e = 'https://ipipeline.quotehaven.co.uk';
-        let a = document.createElement('script');
-        let b = document.createElement('link');
-        a.setAttribute('src', e + '/js/embed.js');
-        b.setAttribute('rel', 'stylesheet');
-        b.setAttribute('href', e + '/css/embed.css');
-        document.getElementsByTagName('body')[0].appendChild(a);
-        document.getElementsByTagName('head')[0].appendChild(b);
-    });
-})();
-</script>
+<script src="https://ipipeline.quotehaven.co.uk/js/embed.js"></script>
 ```
 
 ### 4. Finally, place the following HTML code where you would like the quote form to be rendered.
 
 ```html	
-<div id="quotehaven_app">
-    <router-view embed />
-</div>
+<div id="quotehaven_app"></div>
 ```
-
-
-
